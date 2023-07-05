@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #A8FBFF;
+}
+
+.container {
+    height: 100vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.box1, .box2 {
+    width: 50%;
+    height: 90%;
+    margin-bottom: 20px;
+}
+
+.box1 h2 {
+    font-size: 6vmin;
+    margin: 20px 0;
+}
+
+.box1 p {
+    width: 90%;
+    font-size: 3vmin;
+    margin: 20px 0;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.box-form-item {
+    padding: 0 10px;
+    height: 90%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box-form-item label {
+    font-size: 18px;
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    padding-left: 40px;
+    font-size: 18px;
+}
+
+select {
+    padding-left: 10px;
+}
+
+.icon {
+    position: relative;
+    top: 28px;
+    left: 11px;
+}
+
+.box-form-radio {
+    width: 95%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.checkbox {
+    display: flex;
+    flex-direction: row;
+}
+
+.checkbox input {
+    height: 3vmin;
+}
+
+.box-form-button {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.box-form-button button {
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+@media (max-width: 320px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box1 {
+        height: 50vh;
+        width: 95%;
+        margin: 250px auto 30px
+        font-size: 12vmin
+    }
+
+    .box1 h2 {
+        font-size: 9vmin
+    }
+
+    .box1 p {
+        font-size: 4vmin
+    }
+
+    .box2 {
+        height: 50vh;
+        width: 95%;
+    }
+
+    .checkbox input {
+        height: 5vmin
+    }
+}
+
+@media (max-width: 425px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box1 {
+        height: 50vh;
+        width: 95%;
+        margin: 350px auto 30px
+        font-size: 12vmin
+    }
+
+    .box1 h2 {
+        font-size: 9vmin
+    }
+
+    .box1 p {
+        font-size: 4vmin
+    }
+
+    .box2 {
+        height: 50vh;
+        width: 95%;
+    }
+
+    .checkbox input {
+        height: 5vmin
+    }
+}
+
+
